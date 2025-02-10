@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRACE - RIPPLE-2K25</title>
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                TRACE 2K25
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#venue">Venue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#coordinators">Coordinators</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <video class="background-video" autoplay loop muted playsinline>
+            <source src="assets/videos/civil.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        
+        <div class="hero-content">
+            <div class="logos" data-aos="fade-down">
+                <img src="assets/images/rgm-logo.png" alt="RGM Logo" class="logo main-logo d-flex flex-row">
+                <div class="college-info">
+                    <h1 class="college-name">RGM College of Engineering & Technology</h1>
+                    <h3 class="college-subtext d-none d-md-block">(AUTONOMOUS)</h3>
+                    <h3 class="college-address d-none d-md-block">Nandyal, Andhra Pradesh, INDIA, 518501</h3>
+                    <p class="college-estd d-none d-md-block">ESTD-1995</p>
+                </div>
+                <img src="assets/images/civil-logo.png" alt="Civil Logo" class="logo dept-logo">
+            </div>
+
+            <div class="event-info" data-aos="fade-up">
+                <h2 class="department">Department of Civil Engineering</h2>
+                <p class="presents">cordially invites you to</p>
+                <div class="event-name-wrapper">
+                    <h1 class="event-subtitle">RIPPLE-2K25</h1>
+                    <h1 class="event-title">TRACE</h1>
+                </div>
+                
+                <div class="countdown-wrapper">
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <div class="event-status" id="eventStatus"></div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+                <p>Explore Events</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Section -->
+    <section id="venue" class="venue-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Venue & Date</h2>
+            <div class="venue-content" data-aos="fade-up">
+                <div class="venue-card">
+                    <div class="venue-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="venue-details">
+                        <h3>Civil Gallery</h3>
+                        <p>RGMCET, Nandyal</p>
+                    </div>
+                </div>
+                <div class="venue-card">
+                    <div class="venue-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="venue-details">
+                        <h3>Feb 27th - March 2nd</h3>
+                        <p>2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Events</h2>
+            
+            <ul class="nav nav-tabs justify-content-center" data-aos="fade-up">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#technical">
+                        Technical Events
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nonTechnical">
+                        Non Technical Events
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="eventsTabContent">
+                <!-- Technical Events -->
+                <div class="tab-pane fade show active" id="technical" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Technical Workshop -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/Technical Workshop.jpg" class="card-img-top" alt="Technical Workshop" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Technical Workshop</h5>
+                                    <p class="card-text">Hands-on workshop on latest civil engineering technologies and practices</p>
+                                    <a href="https://forms.gle/jEfrxEFRvbdm1jFf8" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Insight Symposium -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/cad clash.png" class="card-img-top" alt="Insight Symposium" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Insight Symposium</h5>
+                                    <p class="card-text">Platform to share and discuss innovative ideas in civil engineering</p>
+                                    <a href="https://forms.gle/9qvo7153KyvCPEua7" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Creative Chronicles -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/creative_chronicals.jpg" class="card-img-top" alt="Creative Chronicles" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Creative Chronicles</h5>
+                                    <p class="card-text">Showcase your innovative civil engineering project ideas</p>
+                                    <a href="https://forms.gle/hk5jbvDmky6cDX2R9" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Genius Grid -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/genius grid (3).png" class="card-img-top" alt="Genius Grid" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Genius Grid</h5>
+                                    <p class="card-text">Test your problem-solving skills in structural engineering</p>
+                                    <a href="https://forms.gle/gb1ZVRwEnftiJz3s9" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Creator's Craft -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/cad clash.png" class="card-img-top" alt="Creator's Craft" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Creator's Craft</h5>
+                                    <p class="card-text">Competition for innovative construction techniques</p>
+                                    <a href="https://forms.gle/E3SNbiEPLXyK8xCX9" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- CAD Clash -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/cad clash.png" class="card-img-top" alt="CAD Clash" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">CAD Clash</h5>
+                                    <p class="card-text">Competition to showcase your CAD design skills</p>
+                                    <a href="https://forms.gle/xLbTv1qwLFCFefoh6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Geo Genius -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/GEO GENIUS.png" class="card-img-top" alt="Geo Genius" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Geo Genius</h5>
+                                    <p class="card-text">Challenge your knowledge in geotechnical engineering</p>
+                                    <a href="https://forms.gle/jD435g224k63CHJc9" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Site Master -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/site master.png" class="card-img-top" alt="Site Master" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Site Master</h5>
+                                    <p class="card-text">Competition on construction site management skills</p>
+                                    <a href="https://forms.gle/oHr2ur9JmGtzTumR9" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Edu Lab Studio -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/technical/EDU.png" class="card-img-top" alt="Edu Lab Studio" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Edu Lab Studio</h5>
+                                    <p class="card-text">Hands-on laboratory experiments and demonstrations</p>
+                                    <a href="https://forms.gle/CQmE7DY2oRggVp3t7" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non Technical Events -->
+                <div class="tab-pane fade" id="nonTechnical" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Clue Chase -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/images (1).jpeg.jpg" class="card-img-top" alt="Clue Chase" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Clue Chase</h5>
+                                    <p class="card-text">Exciting treasure hunt with civil engineering themed clues</p>
+                                    <a href="https://forms.gle/NFaBSM5j9RGf95kY6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spotify Vibes -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/Listen & Identofy.jpg" class="card-img-top" alt="Spotify Vibes" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Spotify Vibes</h5>
+                                    <p class="card-text">Music and entertainment event for participants</p>
+                                    <a href="https://forms.gle/xMWTWzEP8zi1xXkB6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Multimedia -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/illustration-technology-vector_53876-5319.avif" class="card-img-top" alt="Multimedia" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Multimedia</h5>
+                                    <p class="card-text">Creative digital content creation competition</p>
+                                    <a href="https://forms.gle/hjGzZYQtQ6cvbP267" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mystery Mania -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/images (1).jpeg.jpg" class="card-img-top" alt="Mystery Mania" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Mystery Mania</h5>
+                                    <p class="card-text">Engaging mystery solving event with engineering twists</p>
+                                    <a href="https://forms.gle/4D8KnWwB4FVdiTt28" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rope Wars -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/ROPE.jpg" class="card-img-top" alt="Rope Wars" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Rope Wars</h5>
+                                    <p class="card-text">Team building and physical challenge event</p>
+                                    <a href="https://forms.gle/CNyRtnr2k6MScm6m8" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rangoli -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/up.jpg" class="card-img-top" alt="Rangoli" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Rangoli</h5>
+                                    <p class="card-text">Traditional art competition with engineering themes</p>
+                                    <a href="https://forms.gle/sEW9eN7Tmn3tAEGv6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Spot Games -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/ROPE.jpg" class="card-img-top" alt="Spot Games" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Spot Games</h5>
+                                    <p class="card-text">Fun quick games and challenges for participants</p>
+                                    <a href="https://forms.gle/qzvQyKQ54hTuYMqb6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ramp Walk -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/ramp walk.jpg" class="card-img-top" alt="Ramp Walk" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Ramp Walk</h5>
+                                    <p class="card-text">Fashion show with engineering and technical themes</p>
+                                    <a href="https://forms.gle/NVHXrazMYeEAcGnG6" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Culturals -->
+                        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card event-card h-100">
+                                <div style="aspect-ratio: 4/3; overflow: hidden;">
+                                    <img src="assets/images/non_tech/up.jpg" class="card-img-top" alt="Culturals" style="width: 100%; height: 100%; object-fit: cover;">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Culturals</h5>
+                                    <p class="card-text">Cultural performances and artistic competitions</p>
+                                    <a href="#" class="btn btn-primary">Register Here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coordinators Section -->
+    <section class="trace-coordinators" id="coordinators">
+        <div class="container">
+
+            <h2 class="trace-section__title" data-aos="fade-up">Event Coordinators</h2>
+            
+            <!-- Convener Section -->
+            <div class="trace-convener__wrapper" data-aos="fade-up">
+                <h3 class="trace-convener__title">Event Convener</h3>
+                <div class="trace-convener__card">
+                    <div class="trace-convener__details">
+                        <h4 class="trace-convener__name">Mr. V. Madhu</h4>
+                        <div class="trace-convener__designation">
+                            <span class="trace-badge">Assistant Professor, M.Tech</span>
+                            <span class="trace-badge trace-badge--outline">Civil Engineering</span>
+                        </div>
+                        <p class="trace-convener__role">Convener, TRACE 2K25</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Student Coordinators Section -->
+            <div class="trace-student-coords__wrapper" data-aos="fade-up">
+                <h3 class="trace-student-coords__title">Student Coordinators</h3>
+                <div class="trace-student-coords__grid">
+                    <!-- Student Coordinator 1 -->
+                    <div class="trace-student-coords__card">
+                        <div class="trace-student-coords__content">
+                            <h4 class="trace-student-coords__name">N.V. Bharath Kumar</h4>
+                            <p class="trace-student-coords__info">Final Year CE</p>
+                            <div class="trace-student-coords__contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 7670835537</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Coordinator 2 -->
+                    <div class="trace-student-coords__card">
+                        <div class="trace-student-coords__content">
+                            <h4 class="trace-student-coords__name">L. Maneesha</h4>
+                            <p class="trace-student-coords__info">Final Year CE</p>
+                            <div class="trace-student-coords__contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 8074209926</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Coordinator 3 -->
+                    <div class="trace-student-coords__card">
+                        <div class="trace-student-coords__content">
+                            <h4 class="trace-student-coords__name">Y. Harika</h4>
+                            <p class="trace-student-coords__info">Final Year CE</p>
+                            <div class="trace-student-coords__contact">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 6304984853</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            RGM College of Engineering & Technology
+                            Nandyal, Andhra Pradesh
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +91 1234567890
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            trace2k25@rgmcet.edu.in
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul class="quick-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#coordinators">Coordinators</a></li>
+                        <li><a href="https://rgmcet.edu.in">College Website</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 TRACE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
