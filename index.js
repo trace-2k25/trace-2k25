@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Set event dates
-    const eventStartDate = new Date('2025-02-27T00:00:00');
-    const eventEndDate = new Date('2025-03-02T00:00:00');
+    const eventStartDate = new Date('2025-03-01T00:00:00');
+    const eventEndDate = new Date('2025-03-04T00:00:00');
 
     // Navbar scroll effect
     function handleNavbarScroll() {
